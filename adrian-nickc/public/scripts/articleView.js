@@ -75,7 +75,7 @@ articleView.setTeasers = () => {
 
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
-  $('#export-field').hide();
+
   $('#article-json').on('focus', function(){
     this.select();
   });
@@ -103,8 +103,6 @@ articleView.create = () => {
     hljs.highlightBlock(block);
   });
 
-  $('#export-field').show();
-  $('#article-json').val(`${JSON.stringify(article)},`);
 };
 
 articleView.submit = event => {
