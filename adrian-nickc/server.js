@@ -173,7 +173,7 @@ function loadArticles() {
 }
 
 function loadDB() {
-  // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
+  // COMMENTED: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
   //the server sends a query  on three and if the table articles does not exist, it creates it. then it calls loadArticles() it sends confirmation on four-- It is instantiated on this page and never interacts with article.js  -- CREATE is part of the CREATE part of CRUD
   client.query(`
     CREATE TABLE IF NOT EXISTS articles (
